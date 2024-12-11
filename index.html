@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gala Gift Heist Mystery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="game-container">
+    <!-- Story Page -->
+    <div id="story-page">
+      <h1>Gala Gift Heist Mystery</h1>
+      <p id="story"></p>
+      <p>Time Remaining: <span id="timer-main">300</span> seconds</p>
+      <button id="start-game">Start Investigation</button>
+    </div>
+
+    <!-- Suspect List Page -->
+    <div id="suspects-page" class="hidden">
+      <h2>Suspect List</h2>
+      <div id="suspects-list" class="suspects-grid"></div>
+      <div id="game-info">
+        <p>Time Remaining: <span id="timer-secondary">300</span> seconds</p>
+        <p>Score: <span id="score">0</span></p>
+      </div>
+      <button id="hint-button">Get Hint</button>
+      <p id="hint-text"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+
+    <!-- End Screen -->
+    <div id="end-screen" class="hidden">
+      <h2>Game Over</h2>
+      <p id="end-message"></p>
+      <button onclick="window.location.reload()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
